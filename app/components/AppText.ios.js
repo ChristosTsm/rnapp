@@ -1,5 +1,6 @@
 import React from "react";
-import { Text, StyleSheet, Platform } from "react-native";
+import { Text, StyleSheet } from "react-native";
+
 import colors from "../config/colors";
 
 function AppText(props) {
@@ -9,16 +10,8 @@ function AppText(props) {
 const styles = StyleSheet.create({
   text: {
     color: colors.primary,
-    ...Platform.select({
-      ios: {
-        fontSize: 20,
-        fontFamily: "Al Nile",
-      },
-      android: {
-        fontSize: 18,
-        fontFamily: "Roboto",
-      },
-    }),
+    fontSize: 20,
+    fontFamily: "Georgia",
   },
 });
 
